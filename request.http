@@ -1,0 +1,35 @@
+### crear un operario
+POST http://localhost:9000/api/operarios HTTP/1.1
+Content-Type: application/json
+
+{
+  "cedula": "1114620379",
+  "nombreCompleto": "javier muñoz",
+  "telefono":  3174739879,
+  "direccion": "barrio San andres",
+  "email": "javi@gmail.com"
+
+}
+
+### consultar toda la colección de operarios
+GET http://localhost:9000/api/operarios HTTP/1.1 
+
+### consultar un operario
+GET http://localhost:9000/api/operarios/6619684cbe3af1f428343f28 HTTP/1.1 
+
+
+### actualizar un operario
+PUT http://localhost:9000/api/operarios/6619684cbe3af1f428343f28 HTTP/1.1
+Content-Type: application/json
+
+{
+  "cedula": "1114620379",
+  "nombreCompleto": "Marta Ligia Lopez",
+  "telefono": 3174733789,
+  "direccion": "Santa Fe Bajo",
+  "email": "martaligialopez12@gmail.com"
+}
+
+
+### eliminar un operario
+DELETE http://localhost:9000/api/operarios/66196d0a5dd9736a38d2391b HTTP/1.1
